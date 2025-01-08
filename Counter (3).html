@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أذكار وصلاة على النبي</title>
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background: linear-gradient(to right, #ffebcd, #e0f7fa); /* تدرج لوني فاتح مع لمسة من الأزرق */
+            text-align: center;
+            color: #2f4f4f;
+            direction: rtl;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            font-size: 36px;
+            margin-top: 50px;
+            font-family: 'Amiri', serif;
+            color: #16a085; /* لون أخضر هادئ */
+        }
+        .content {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        p {
+            font-size: 22px;
+            margin: 10px;
+            line-height: 1.8;
+        }
+        button {
+            font-size: 18px;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #2ecc71; /* أخضر فاتح */
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            color: white;
+        }
+        button:hover {
+            background-color: #27ae60;
+        }
+        #counter {
+            font-size: 28px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .additional-adhkar {
+            margin-top: 30px;
+            font-size: 20px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 15px;
+        }
+        .additional-adhkar p {
+            background-color: #f1f8e9; /* خلفية فاتحة */
+            padding: 10px;
+            border-radius: 10px;
+            color: #1c4d3e; /* لون النص الداكن */
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+        }
+    </style>
+    <!-- إضافة خط عربي جميل -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Cairo&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <h1>قل "لا إله إلا الله وحده لا شريك له له الملك وله الحمد وهو على كل شيء قدير" مئة مرة</h1>
+
+    <div class="content">
+        <p>كلما ضغطت على الزر، سيتم احتساب مرة من المرات التي تقول فيها هذا الذكر العظيم.</p>
+        <button onclick="incrementCounter()">لقد قلتها!</button>
+        <p id="counter">0</p>
+    </div>
+
+    <div class="additional-adhkar">
+        <h2>أذكار نبوية مفيدة:</h2>
+
+        <p><strong>1. سبحان الله وبحمده</strong><br>
+        قال رسول الله صلى الله عليه وسلم: <em>من قال سبحان الله وبحمده مئة مرة، غفرت له ذنوبه وإن كانت مثل زبد البحر.</em> (صحيح مسلم)</p>
+
+        <p><strong>2. لا إله إلا الله وحده لا شريك له له الملك وله الحمد وهو على كل شيء قدير</strong><br>
+        قال رسول الله صلى الله عليه وسلم: <em>من قال لا إله إلا الله وحده لا شريك له له الملك وله الحمد وهو على كل شيء قدير في يوم مئة مرة، كانت له عدل عشرة رقاب، وكتبت له مئة حسنة، ومحيت عنه مئة سيئة، وكانت له حرزًا من الشيطان.</em> (صحيح مسلم)</p>
+
+        <p><strong>3. اللهم صل وسلم على نبينا محمد</strong><br>
+        قال رسول الله صلى الله عليه وسلم: <em>من صلى عليَّ صلاة واحدة، صلى الله عليه بها عشرة.</em> (صحيح مسلم)</p>
+
+        <p><strong>4. أستغفر الله العظيم الذي لا إله إلا هو الحي القيوم وأتوب إليه</strong><br>
+        قال رسول الله صلى الله عليه وسلم: <em>من قال أستغفر الله العظيم الذي لا إله إلا هو الحي القيوم وأتوب إليه، غفر له وإن كان فارًا من الزحف.</em> (صحيح الترمذي)</p>
+
+        <p><strong>5. بسم الله الرحمن الرحيم</strong><br>
+        قال رسول الله صلى الله عليه وسلم: <em>إذا قلت بسم الله الرحمن الرحيم، فقد كتبت لك براءة من النار.</em> (صحيح ابن حبان)</p>
+    </div>
+
+    <script>
+        let count = 0;
+
+        function incrementCounter() {
+            if (count < 100) {
+                count++;
+                document.getElementById('counter').innerText = count;
+            } else {
+                alert('لقد أكملت مئة مرة!');
+            }
+        }
+    </script>
+
+</body>
+</html>
